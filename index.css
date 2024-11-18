@@ -1,3 +1,100 @@
 body {
-    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;    /* Vertically center */
+    height: 100vh;          /* Full viewport height */
+    margin: 0;              /* Remove default body margin */
 }
+
+.container {
+    width: 550px;
+    height: 729px; /* Fixed height */
+    margin: 0 auto; /* Center horizontally in case of no Flexbox parent */
+    display: flex; /* Enable Flexbox */
+    align-items: flex-start; /* Align items to the top */
+    background: #F4F4F4; /* Background color */
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+.header-div {
+    width: 550px;
+    height: 285px;
+    background: #6943FF;
+    flex-shrink: 0; /* Prevent shrinking */
+    display: flex; /* Enable Flexbox within output div */
+    align-self: flex-start; /* Position the output-div at the top of the container */
+    flex-direction: column; /* Stack input and button vertically */
+    justify-content: center; /* Center items vertically within the output div */
+    align-items: center; /* Center items horizontally within the output div */
+}
+
+.input-div {
+    background-color: #6943FF;
+    width: 117px; /* Set the width of the input field */
+    height: 83px; /* Set the height of the input field */
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-bottom: 15px; /* Space between input and button */
+    padding: 0 10px; /* Padding for the input */
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+    text-align: center; /* Center the text inside the input field */
+    font-size: 52px; /* Optional: Set the font size for better readability */
+    font-weight: bold;
+    color: white;
+}
+
+.output-div {
+    
+    width: 500px;
+    height: 108.573px;
+    flex-shrink: 0;
+    border-radius: 4.681px 0px 0px 0px;
+    background: var(--white, #FFF);
+    flex-direction: column; /* Stack input and button vertically */
+    justify-content: center; /* Center items vertically within the output div */
+    align-items: center; /* Center items horizontally within the output div */
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.button {
+    display: inline-flex;
+    padding: 9px 27.5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    margin-top: 26.77px;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px; /* 135.714% */
+    letter-spacing: -0.84px;
+    margin-top: 33;
+  }
+
+  h2 {
+    color: #FFF;
+    ext-align: center;
+    font-family: Inter;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24.393px; /* 42.057% */
+    width: 211px;
+    height: 51.225px;
+    flex-shrink: 0;
+  }
+  
