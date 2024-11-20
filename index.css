@@ -1,58 +1,71 @@
 body {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;    /* Vertically center */
-    height: 100vh;          /* Full viewport height */
-    margin: 0;              /* Remove default body margin */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
     width: 550px;
-    height: 729px; /* Fixed height */
-    margin: 0 auto; /* Center horizontally in case of no Flexbox parent */
-    display: flex; /* Enable Flexbox */
-    align-items: flex-start; /* Align items to the top */
-    background: #F4F4F4; /* Background color */
-    flex-direction: column; /* Stack child elements vertically */
+    height: 729px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    background: #F4F4F4;
+    flex-direction: column;
 }
 
 .header-div {
     width: 550px;
     height: 285px;
     background: #6943FF;
-    flex-shrink: 0; /* Prevent shrinking */
-    display: flex; /* Enable Flexbox within output div */
-    align-self: flex-start; /* Position the output-div at the top of the container */
-    flex-direction: column; /* Stack input and button vertically */
-    justify-content: center; /* Center items vertically within the output div */
-    align-items: center; /* Center items horizontally within the output div */
+    flex-shrink: 0;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-div {
     background-color: #6943FF;
-    width: 117px; /* Set the width of the input field */
-    height: 83px; /* Set the height of the input field */
-    flex-shrink: 0; /* Prevent shrinking */
-    margin-bottom: 15px; /* Space between input and button */
-    padding: 0 10px; /* Padding for the input */
-    box-sizing: border-box; /* Ensure padding doesn't overflow */
-    text-align: center; /* Center the text inside the input field */
-    font-size: 52px; /* Optional: Set the font size for better readability */
+    width: 117px;
+    height: 83px; 
+    flex-shrink: 0; 
+    margin-bottom: 15px;
+    margin-top: 10px;
+    box-sizing: border-box; 
+    text-align: center; 
+    font-size: 52px; 
     font-weight: bold;
     color: white;
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+}
+
+.output-container {
+  width: 550px;
+  height: 444px;
+  flex-shrink: 0;
+  padding: 25px;
+  box-sizing: border-box;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #F4F4F4;
 }
 
 .output-div {
-    
     width: 500px;
     height: 108.573px;
     flex-shrink: 0;
-    border-radius: 4.681px 0px 0px 0px;
+    border-radius: 5px;
     background: var(--white, #FFF);
-    flex-direction: column; /* Stack input and button vertically */
-    justify-content: center; /* Center items vertically within the output div */
-    align-items: center; /* Center items horizontally within the output div */
+    display: flex;
+    align-items: center;
     align-self: center;
+    flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -65,29 +78,36 @@ body {
     border-radius: 5px;
     border: none;
     background: #FFF;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    margin-top: 26.77px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
   }
   
   .button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #d7d7d7;
+  }
+
+  .button:active {
+    background-color: #f0f0f0;
+    transform: scale(0.95);
   }
 
   h1 {
     color: #FFF;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 800;
-    line-height: 38px; /* 135.714% */
-    letter-spacing: -0.84px;
-    margin-top: 33;
+    line-height: 38px;
+    margin-top: 30px;  
   }
 
   h2 {
     color: #FFF;
-    ext-align: center;
     font-family: Inter;
     font-size: 58px;
     font-style: normal;
@@ -96,5 +116,32 @@ body {
     width: 211px;
     height: 51.225px;
     flex-shrink: 0;
+  }
+
+  .p1 {
+  color: #5A537B;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 100% */
+  width: 346px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-top: 31px;
+  
+  }
+
+  .p2 {
+  color: #353535;
+  text-align: center;
+  /* text-sm/leading-5/font-normal */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  margin-top: 9px;
   }
   

@@ -1,17 +1,33 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <title>Unit Converter</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div class="container">
+
             <div class="header-div">
                 <h1>Metric/Imperial Unit Conversion</h1>
-                <input id="input-el" class="input-div"> </input>
-                <button class="button">CONVERT</button>
+                <input class="input-div" id="input-el">
+                <button class="button" id="input-btn">Convert</button>
             </div>
-            <div class="output-div"></div>
-            <div class="output-div"></div>
-            <div class="output-div"></div>
+
+            <div class="output-container">
+                <div class="output-div">
+                    <p1 class="p1">Length (Meter/Feet)</p1>
+                    <p2 class="p2" id="length-el"></p2>
+                </div>
+                <div class="output-div">
+                    <p1 class="p1">Volume (Liters/Gallons)</p1>
+                    <p2 class="p2" id="volume-el"></p2>
+                </div>
+                <div class="output-div">
+                    <p1 class="p1">Mass (Kilograms/Pounds))</p1>
+                    <p2 class="p2" id="mass-el"></p2>
+                </div>
+            </div>
+
         </div>
         <script src="index.js"></script>
     </body>
