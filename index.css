@@ -112,7 +112,7 @@ body {
     font-size: 58px;
     font-style: normal;
     font-weight: 800;
-    line-height: 24.393px; /* 42.057% */
+    line-height: 24.393px;
     width: 211px;
     height: 51.225px;
     flex-shrink: 0;
@@ -125,7 +125,7 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px; /* 100% */
+  line-height: 20px;
   width: 346px;
   height: 25px;
   flex-shrink: 0;
@@ -136,12 +136,11 @@ body {
   .p2 {
   color: #353535;
   text-align: center;
-  /* text-sm/leading-5/font-normal */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
   margin-top: 9px;
   }
   
